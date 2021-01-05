@@ -7,6 +7,7 @@ document.addEventListener("keypress",function(e){
         case "7":
             x=55;
             y=50;
+            alert ("holas");
             break;
         case "8":
             x=155;
