@@ -1,45 +1,86 @@
 var x,y;
+var used1 = true;
+var used2 = true;
+var used3 = true;
+var used4 = true;
+var used5 = true;
+var used6 = true;
+var used7 = true;
+var used8 = true;
+var used9 = true;
 var condicion = true;
 document.addEventListener("keypress",function(e){
     var tecla =e.key;
     switch (tecla)
     {
         case "7":
-            x=55;
-            y=50;
+            if( used7 === true ){
+                x=55;
+                y=50;
+                used7 = false;
+            }
             break;
         case "8":
-            x=155;
-            y=50;
+            if( used8 === true ){
+                x=155;
+                y=50;
+                used8 = false;
+            }
             break;
         case "9":
-            x=250;
-            y=50;
+            if( used9 === true ){
+                x=250;
+                y=50;
+                used9 = false;
+            }
             break;
         case "4":
-            x=55;
-            y=150;
+            if( used4 === true ){
+                x=55;
+                y=150;
+                used4 = false;
+            }
             break;
+
         case "5":
-            x=155;
-            y=150;
+            if( used5 === true ){
+                x=155;
+                y=150;
+                used5 = false;
+            }
             break;
+
         case "6":
-            x=250;
-            y=150;
+            if( used6 === true ){
+                x=250;
+                y=150;
+                used6 = false;
+            }
             break;
+                
         case "1":
-            x=55;
-            y=250;
+            if( used1 === true ){
+                x=55;
+                y=250;
+                used1 = false;
+            }
             break;
+            
         case "2":
-            x=155;
-            y=250;
+            if( used2 === true ){
+                x=155;
+                y=250;
+                used2 = false;
+            }
             break;
         case "3":
-            x=250;
-            y=250;
+            if( used3 === true ){
+                x=250;
+                y=250;
+                used3 = false;
+            }
             break;
+               
     }
     draw();
 });
