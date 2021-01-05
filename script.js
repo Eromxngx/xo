@@ -103,15 +103,18 @@ function draw(){
     var X = new Path2D();
     X.arc(x,y,30,0,2 *Math.PI,false)
 
-    if (condicion === true){
-        ctx.stroke(O);
-        
-        condicion = false;
-    }else{
-    ctx.fill(X);
+    if ( x !=0 && y !=0 ){
+        if (condicion === true){
+            ctx.stroke(O);
+            
+            condicion = false;
+        }else{
+        ctx.fill(X);
 
-    condicion = true;
+        condicion = true;
+        }    
     }
+    
     x = 0;
     y = 0;
  }
